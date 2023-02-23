@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+"<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+ <title>Athlete's Wear-House</title>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("https://thumbs.dreamstime.com/b/pontap%C3%A9-do-jogador-de-futebol-l%C3%A1pis-cont%C3%ADnuo-tema-minimalista-da-bola-um-esporte-projeto-desenho-competi%C3%A7%C3%A3o-a%C3%A7%C3%A3o-atleta-155063356.jpg");
+  background-size: contain;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+ font-family: 'Bahianita', cursive;
+  text-align: left;
+  font-size: 75px;
+  color: rgba(255,0,0,0.5);
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: right;
+  color: #095;
+  margin: 0px 0 70px 0;
+  font: sans-serif;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+h4 {
+  text-align: center;
+  color:purple;
+}
+input {
+  text-align: center;
+  margin: 0 auto;
+  display: center;
+  max-width: 500px;
+  
+}
+button {
+  background: #429;
+  color: black;
+  float: right
+}
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.clothing{
+  background-image: url("https://muse.world/wp-content/uploads/2020/04/tommy_1.jpg");
+}
+.equipment{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKfGXOiaB58zZhCPbs_y_ibElSr-vfQMzxw&usqp=CAU");
+
+}
+.recovery{
+  background-image: url("https://blog.myfitnesspal.com/wp-content/uploads/2020/04/Why-Recovery-Isnt-Just-For-Pro-Athletes.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Athlete's Wear-House</h1>
+<h2><em>The One Stop Shop for Athlete's Everywhere<em></h2>
+<div class="clothing">
+  <p>Clothing <span class="price">All Styles Avail.</span><br />
+  <small>All top quality clothing that allows you to perform your best while being comfortable: Styles Available for the Entire Family! </small></p>
+</div>
+
+<div class="equipment">
+  <p>Equipment<br />
+  <small>No matter the Sport or workout, we have whatever you need to get going. With our wide selection of Athletic Equipment.</small></p>
+</div>
+  
+<div class="recovery">
+  <p>Recovery<br />
+  <small>Take complete care of your body, with nothing but the best recovery options available to you. Whether it's recovering electrolytes or needing to combat soreness. We have what you need. </small></p>
+</div>
+<h4>Join Our Mailing List To Stay Updated <br><br>
+And Receive Exclusive Discounts!</h4>
+<input type="email" placeholder="Your Email">
+<button>Sign Me Up !</button>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+  $('button').on('click', function() {
+    alert('Thank\'s For Signing Up')
+  });
+
+</script>
+
+</body>
